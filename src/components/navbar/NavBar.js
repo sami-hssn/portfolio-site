@@ -7,59 +7,31 @@ const NavBar = () => {
 
 
   return (
-    <Navbar className="navbar" expand="lg">
-      <Navbar.Brand>
-        <a href="/" className="logo">
-          <img src="../media/logoSH.png" alt="Logo" />
-        </a>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbar-nav" />
-      <Navbar.Collapse id="navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link
-            as='home'
-            to="/"
-          >
-            /home
-          </Nav.Link>
-          <Nav.Link
-            as='about'
-            to="/about"
-          >
-            /about
-          </Nav.Link>
-          <Nav.Link
-            as='skills'
-            to="/skills"
-          >
-            /skills
-          </Nav.Link>
-          <Nav.Link
-            as='experience'
-            to="/experience"
-          >
-            /experience
-          </Nav.Link>
-          <Nav.Link
-            as='projects'
-            to="/projects"
-          >
-            /projects
-          </Nav.Link>
-        </Nav>
-        <div className="social-icons">
-          <a href="mailto:your-email@example.com">
-            <Email />
-          </a>
-          <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
-            <GitHub />
-          </a>
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
-            <LinkedIn />
-          </a>
-        </div>
-      </Navbar.Collapse>
-    </Navbar>
+    <Navbar fixed="top" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#">Sami Hassan</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#intro">Home</Nav.Link>
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#experience">Experience</Nav.Link>
+              <Nav.Link href="#projects">Projects</Nav.Link>
+            </Nav>
+            <Nav className="ml-auto">
+              <Nav.Link href="mailto:shass117@uottawa.ca">
+                <EmailRoundedIcon style={{ fontSize: 20 }}></EmailRoundedIcon>
+              </Nav.Link>
+              <Nav.Link href="https://github.com/sami-hssn" target="_blank">
+                <GitHubIcon style={{ fontSize: 19 }}></GitHubIcon>
+              </Nav.Link>
+              <Nav.Link href="https://www.linkedin.com" target="_blank">
+                <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
   );
 };
 

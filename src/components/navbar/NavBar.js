@@ -1,37 +1,115 @@
-import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
 import "./NavBar.css";
-import { Email, GitHub, LinkedIn } from "../svg.js";
+import { HamburgerIcon, GitHubIcon, LinkedInIcon, EmailIcon, ExitIcon } from "../svg";
+import LogoSH from "../../media/logoSH.png";
 
 const NavBar = () => {
 
+  const [ isButtonClicked, setIsButtonClicked ] = useState( false );
+
+  useEffect( () => {
+    console.log(isButtonClicked)
+  }, [ isButtonClicked ]) 
 
   return (
-    <Navbar fixed="top" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#">Sami Hassan</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#intro">Home</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#experience">Experience</Nav.Link>
-              <Nav.Link href="#projects">Projects</Nav.Link>
-            </Nav>
-            <Nav className="ml-auto">
-              <Nav.Link href="mailto:shass117@uottawa.ca">
-                <EmailRoundedIcon style={{ fontSize: 20 }}></EmailRoundedIcon>
-              </Nav.Link>
-              <Nav.Link href="https://github.com/sami-hssn" target="_blank">
-                <GitHubIcon style={{ fontSize: 19 }}></GitHubIcon>
-              </Nav.Link>
-              <Nav.Link href="https://www.linkedin.com" target="_blank">
-                <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <nav>
+      <div className="navbar wrapper">
+        <ul>
+          <li>
+            <a href="#Intro">
+              <img className="logo" src={LogoSH}/>
+            </a>
+          </li>
+          <div className="navbar-pages">
+            <li>
+              <a href="#Intro">Intro</a>
+            </li>
+            <li>
+              <a href="#About">About</a>
+            </li>
+            <li>
+              <a href="#Experience">Experience</a>
+            </li>
+            <li>
+              <a href="#Projects">Projects</a>
+            </li>
+          </div>
+          <div className="navbar-links">
+            <li>
+              <a href="mailto:shass117@uottawa.ca">
+                <EmailIcon iconSize={20}/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.github.com/sami-hssn">
+                <GitHubIcon iconSize={20}/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com">
+                <LinkedInIcon iconSize={20}/>
+              </a>
+            </li>
+            
+          </div>
+          <li>
+              <button className="navbar-hamburger"
+              onClick={ () => setIsButtonClicked( !isButtonClicked ) }
+              >
+                <HamburgerIcon iconSize={20}/>
+              </button>
+            </li>
+        </ul>
+      </div>
+      { isButtonClicked ? 
+          <ul className="navbar-mobile">
+            <div className="wrapper">
+              <div className="navbar-mobile-pages">
+                <li>
+                  <a href="#Intro">Intro</a>
+                </li>
+                <li>
+                  <a href="#About">About</a>
+                </li>
+                <li>
+                  <a href="#Experience">Experience</a>
+                </li>
+                <li>
+                  <a href="#Projects">Projects</a>
+                </li>  
+                <div className="navbar-mobile-links">
+                  <li>
+                    <a href="mailto:shass117@uottawa.ca">
+                      <EmailIcon iconSize={20}/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.github.com/sami-hssn">
+                      <GitHubIcon iconSize={20}/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com">
+                      <LinkedInIcon iconSize={20}/>
+                    </a>
+                  </li>
+                  <li>
+                    <button onClick={()=> setIsButtonClicked (!isButtonClicked)}  className="exitBtn">
+                      <ExitIcon />
+                    </button>
+                  </li>
+                </div>
+              </div>
+              
+              
+            </div>
+
+            
+          </ul>
+          : 
+          <></>
+      }
+    </nav>
   );
 };
 

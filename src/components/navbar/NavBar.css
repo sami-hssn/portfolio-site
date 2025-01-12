@@ -1,31 +1,129 @@
-/* Navbar.css */
+nav{
+  background-color: rgb(35, 35, 100);
+  color: rgb(255, 255, 255);
+}
 
-  
-  .current-nav-link {
-    color: #00bcd4 !important; /* Highlight color */
-    font-weight: bold;
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar{
+  padding: 20px 0;
+}
+
+.navbar-pages{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar-links{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo{
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  fill: white;
+}
+
+button {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar-hamburger svg {
+  fill: white;
+  width: 25px;
+  height: 25px;
+
+}
+
+.navbar-hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  background: transparent;
+  border: 0;
+}
+
+.navbar-mobile-pages{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navbar-mobile-links{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.navbar-mobile-links li:nth-child( 2 ){
+  padding: 0px 10px;
+}
+
+.navbar-mobile .wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 50px 0px;
+}
+
+.navbar-mobile {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: blue;
+}
+
+.navbar-mobile .exitBtn {
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+
+.navbar-mobile .exitBtn svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1280px) {
+  .navbar-pages{
+    display: none;
   }
-  
-  .navbar {
-    background-color: #3F4F6C;
-    padding: 10px 20px;
+
+  .navbar-links{
+    display: none;
   }
-  
-  .navbar .logo img {
-    max-height: 40px;
+
+  .navbar-hamburger{
+    display: block;
   }
-  
-  .nav-text{
-    
-  }
-  .social-icons a {
-    margin: 0 10px;
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: #00bcd4; 
-  }
-  
+
+}
+
+@media (max-width: 768px) {
+
+}

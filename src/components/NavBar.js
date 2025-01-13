@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./NavBar.css";
-import { HamburgerIcon, GitHubIcon, LinkedInIcon, EmailIcon, ExitIcon } from "../svg";
-import LogoSH from "../../media/logoSH.png";
+import "../styles/NavBar.css";
+import { HamburgerIcon, GitHubIcon, LinkedInIcon, EmailIcon, ExitIcon } from "./svg";
+import LogoSH from "../media/logoSH2.png";
 
 const NavBar = () => {
 
@@ -16,38 +16,38 @@ const NavBar = () => {
       <div className="navbar wrapper">
         <ul>
           <li>
-            <a href="#Intro">
-              <img className="logo" src={LogoSH}/>
+            <a href="/">
+              <img className="logo" src={LogoSH} alt="Logo"/>
             </a>
           </li>
           <div className="navbar-pages">
             <li>
-              <a href="#Intro">Intro</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#About">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#Experience">Experience</a>
+              <a href="#experience">Experience</a>
             </li>
             <li>
-              <a href="#Projects">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
           </div>
           <div className="navbar-links">
             <li>
               <a href="mailto:shass117@uottawa.ca">
-                <EmailIcon iconSize={20}/>
+                <EmailIcon iconSize={22}/>
               </a>
             </li>
             <li>
               <a href="https://www.github.com/sami-hssn">
-                <GitHubIcon iconSize={20}/>
+                <GitHubIcon iconSize={22}/>
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com">
-                <LinkedInIcon iconSize={20}/>
+                <LinkedInIcon iconSize={22}/>
               </a>
             </li>
             

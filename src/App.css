@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: #0a192f;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .App-logo {

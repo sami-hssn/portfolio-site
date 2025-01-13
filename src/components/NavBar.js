@@ -46,7 +46,7 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com">
+              <a href="https://www.linkedin.com/in/sami-hassan-84116b244/">
                 <LinkedInIcon iconSize={22}/>
               </a>
             </li>
@@ -66,16 +66,16 @@ const NavBar = () => {
             <div className="wrapper">
               <div className="navbar-mobile-pages">
                 <li>
-                  <a href="#Intro">Intro</a>
+                  <a href="#home">Intro</a>
                 </li>
                 <li>
-                  <a href="#About">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#Experience">Experience</a>
+                  <a href="#experience">Experience</a>
                 </li>
                 <li>
-                  <a href="#Projects">Projects</a>
+                  <a href="#projects">Projects</a>
                 </li>  
                 <div className="navbar-mobile-links">
                   <li>
@@ -89,7 +89,7 @@ const NavBar = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com">
+                    <a href="https://www.linkedin.com/in/sami-hassan-84116b244/">
                       <LinkedInIcon iconSize={20}/>
                     </a>
                   </li>

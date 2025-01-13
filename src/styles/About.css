@@ -67,6 +67,10 @@
     margin-left: 40px;
   }
   
+  .about-image img:hover {
+    transform: translateY(-7px);
+  }
+  
   @media  (max-width: 768px) {
     .about-image img {
         display: none;

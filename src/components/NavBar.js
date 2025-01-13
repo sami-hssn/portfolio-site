@@ -17,7 +17,7 @@ const NavBar = () => {
         <ul>
           <li>
             <a href="/">
-              <img className="logo" src={LogoSH} alt="Logo"/>
+              <img className="logo" src={LogoSH} alt="Logo for Sami Hassan's Webpage"/>
             </a>
           </li>
           <div className="navbar-pages">
@@ -66,16 +66,16 @@ const NavBar = () => {
             <div className="wrapper">
               <div className="navbar-mobile-pages">
                 <li>
-                  <a href="#home">Intro</a>
+                  <a onClick={()=> setIsButtonClicked (!isButtonClicked)}  href="#home">Intro</a>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <a onClick={()=> setIsButtonClicked (!isButtonClicked)} href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#experience">Experience</a>
+                  <a onClick={()=> setIsButtonClicked (!isButtonClicked)}  href="#experience">Experience</a>
                 </li>
                 <li>
-                  <a href="#projects">Projects</a>
+                  <a onClick={()=> setIsButtonClicked (!isButtonClicked)}  href="#projects">Projects</a>
                 </li>  
                 <div className="navbar-mobile-links">
                   <li>

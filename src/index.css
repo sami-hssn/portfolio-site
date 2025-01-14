@@ -24,7 +24,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .section-header {
   display: flex;
   padding-bottom: 42px;
-  width: 100vw;
+  width: 100%;
 }
 
 .section-header::after {

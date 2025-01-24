@@ -26,7 +26,7 @@ function About(){
                     <div className="about-description">
                         I'm currently in my fourth year of my <b>Bachelors of Science  </b> 
                         in <b>Computer Science</b> at the <a href="https://www.uottawa.ca">University of Ottawa</a>.
-                        I am interested in front-end development, human-computer interactions,
+                        I am interested in all things design, front-end development, human-computer interactions,
                         QA and data science.
 
                         <div className="stack-intro">

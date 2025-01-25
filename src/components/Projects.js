@@ -7,7 +7,7 @@ function Projects(){
     const projects = {
         "Audio.fm Website": {
           desc:
-            "A website for a fictitious music sharing platform. My first project with React.",
+            "A website for a fictitious music sharing platform. My first project with React, you can check out my design choices as well!",
           techStack: "React, Bootstrap, HTML5, CSS3, JavaScript",
           link: "https://github.com/sami-hssn/audiofm",
         },

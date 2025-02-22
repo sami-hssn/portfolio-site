@@ -5,6 +5,12 @@ import ExternalLinks from "./ExternalLinks";
 function Projects(){
 
     const projects = {
+      "StyleSync": {
+          desc:
+            "Your virtual closet app. Honours project in the works. Currently working on prototyping.",
+          techStack: "Figma, HTML5, CSS5, JavaScript, Android Studio, Firebase",
+          link: "https://github.com/yasssami/CSI4142",
+        },
         "Exploratory Data Analysis": {
           desc:
             "Analyzing the “story” behind data by choosing top insights to highlight and supporting them through data analysis.",

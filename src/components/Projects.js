@@ -5,11 +5,23 @@ import ExternalLinks from "./ExternalLinks";
 function Projects(){
 
     const projects = {
+        "Exploratory Data Analysis": {
+          desc:
+            "Analyzing the “story” behind data by choosing top insights to highlight and supporting them through data analysis.",
+          techStack: "Python (Numpy, Pandas, Seaborn), Jupyter Notebook",
+          link: "https://github.com/yasssami/CSI4142",
+        },
         "Audio.fm Website": {
           desc:
             "A website for a fictitious music sharing platform. My first project with React.",
           techStack: "React, Bootstrap, HTML5, CSS3, JavaScript",
           link: "https://github.com/sami-hssn/audiofm",
+        },
+        "Graduate Admission Management System": {
+          desc:
+            "Case study for SEG 3101, requirement elicitation, mockups, personas, use cases.",
+          techStack: "Figma",
+          link: "https://github.com/sami-hssn/seg3101-gams-management",
         },
         "Sorting Visualizer": {
           desc:
